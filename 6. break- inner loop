@@ -1,0 +1,30 @@
+public class NestedBreakExample {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 3; i++) {      // Outer loop
+            System.out.println("Outer loop i = " + i);
+
+            for (int j = 1; j <= 5; j++) {  // Inner loop
+                if (j == 3) {
+                    break;  // breaks ONLY the inner loop
+                }
+                System.out.println("   Inner loop j = " + j);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+Outer loop i = 1
+   Inner loop j = 1
+   Inner loop j = 2
+Outer loop i = 2
+   Inner loop j = 1
+   Inner loop j = 2
+Outer loop i = 3
+   Inner loop j = 1
+   Inner loop j = 2
